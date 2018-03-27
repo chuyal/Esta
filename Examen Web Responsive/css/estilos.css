@@ -1,0 +1,339 @@
+
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+body{
+	background-color: #02010a;
+	animation-name: slidein;
+	animation-duration: 1s;
+	font-family: 'Dancing Script', cursive;
+}
+
+@keyframes slidein {
+	0%{margin-top: 150%}
+	50%{margin-top: -5%}
+	100%{margin-top: 0%}
+}
+
+
+
+
+#contenedor{
+	width: 900px;
+	height: auto;
+	background-color: #B9AAA7;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+
+header {
+	max-width: 100%;
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	background-color: #5b7989;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 0px solid #000000;
+}
+#cabecera {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:auto; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	display: inline-block;
+	vertical-align: top;
+}
+#logo{
+	/*background-color: yellow;*/
+	color: white;
+  	text-shadow: 2px 0px 0px #02010a;
+	max-width: 100%;
+	width: 40%;
+	padding: 3%;
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+}
+#menu{
+	padding: 3%;
+	color: white;
+	max-width: 100%;
+	width:50;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+
+a, .sinsub{
+	color: white;
+	text-decoration: none;
+}
+a, .sub{
+	color: white;
+	text-decoration: underline;
+}
+
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+    -webkit-box-shadow: 2px 2px 0px 0px black;
+	-moz-box-shadow: 2px 2px 0px 0px black;
+	box-shadow: 2px 2px 0px 0px black;
+
+}
+
+
+h3{
+	text-decoration: underline;
+}
+#seccion1{
+	max-width: 100%;
+	width: 100%;
+	background-color: #82c3a6;
+	display: block;
+}
+
+#seccion1p{
+	max-width: 100%;
+	width: 100%;
+	background-color: #d5c75f;
+	display:inline-block;
+}
+
+
+#foto1{
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	-webkit-box-shadow:0px 0px 2px #0201a;
+	border: 2px solid #0201a;
+}
+
+#foto1p{
+	max-width: 100%;
+	width: 29%;
+	padding: 2%;
+	display: inline-block;
+	justify-content: center;
+	-webkit-box-shadow:0px 0px 2px #0201a;
+	border: 2px solid #0201a;
+}
+.blur{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+.gris{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+.sepia{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+	background-color: #d5c75f;
+}
+
+#seccion2{
+	max-width: 100%;
+	width:100%;
+	height: auto;
+	background-color: #d5c75f;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 0px solid #000000;
+}
+#seccion2p{
+	max-width: 100%;
+	width:100%;
+	height: auto;
+	background-color: #d5c75f;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 0px solid #000000;
+}
+
+#foto2p{
+	max-width: 100%;
+	width: 29%;
+	display: inline-block;
+	background-color: #d5c75f;
+	padding: 2%;
+	justify-content: center;
+	text-align: center;
+	-webkit-box-shadow:0px 0px 2px #0201a;
+	border: 2px solid #0201a;
+}
+
+#foto2{
+	max-width: 100%;
+	width: 45.5%;
+	display: inline-block;
+	background-color: #d5c75f;
+	padding: 2%;
+	justify-content: center;
+	text-align: center;
+	-webkit-box-shadow:0px 0px 2px #0201a;
+	border: 2px solid #0201a;
+}
+#animacion1:hover{
+	-webkit-box-shadow:0px 0px 2px #82c3a6;
+	border: 2px solid #82c3a6;
+	-webkit-animation-name:Giro;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes Giro
+	{
+		box-shadow:0px 0px 2px #82c3a6;
+		-webkit-box-shadow:0px 0px 2px #82c3a6;
+		0%{-webkit-transform:rotate(0deg);}
+		50%{-webkit-transform:rotate(10deg);}
+		100%{-webkit-transform:rotate(0deg);}
+	}
+
+
+
+
+#animacion2:hover{
+	-webkit-box-shadow: 500px 500px 500px #82c3a6;
+	border: 2px solid #82c3a6;
+	-webkit-animation-name:Derecha;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-box-shadow: 0px 0px 5px #82c3a6;
+
+}
+
+@-webkit-keyframes Derecha
+	{
+		0%{-webkit-transform:translateX(0deg);}
+		50%{-webkit-transform:translateX(20px)translateY(-10px);}
+		100%{-webkit-transform:rotate(0deg);}
+	}
+
+
+
+
+#foto3{
+	max-width: 100%;
+	width: 45.5%;
+	display: inline-block;
+	background-color: #d5c75f;
+	padding: 2%;
+	justify-content: center;
+	text-align: center;
+	-webkit-box-shadow:0px 0px 2px #0201a;
+	border: 2px solid #0201a;
+}
+
+#footer{
+	max-width: 100%;
+	width:100%;
+	height: auto;
+	background-color:  #C6d5c5;
+	display: inline-block;
+	vertical-align: top;
+	align-content: center;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border: 0px solid #000000;
+}
+#pie1{
+	padding: 3px;
+	max-width: 100%;
+	width: 24%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+#pie2{
+	
+	max-width: 100%;
+	width: 24%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+#pie3{
+	
+	max-width: 100%;
+	width: 24%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+#pie4{
+
+	max-width: 100%;
+	width: 24%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 899px) {
+
+	header #logo,
+	header{
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+	}
+	#cabecera{
+		padding: 3px;
+		width: 100%;
+		align-content: center;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+	#menu{
+		width: 100%;
+		align-content: center;
+	}
+
+	#contenedor{
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	}
+
+	#section2, #seccion1p, #seccion2p, #foto2, #foto3{
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		align-content: center;
+	}
+	#pie1, #pie2, #pie3, #pie4{
+	padding: 3px;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+	vertical-align: top;
+	align-content: center;
+	text-align: center;
+	}
+	#foto1p, #foto2p{
+		padding: 3px;
+		max-width: 100%;
+		width: 100%;
+		display: block;
+		align-content: center;
+		-webkit-box-shadow:0px 0px 2px #0201a;
+		border: 2px solid #0201a;
+	}
+}
